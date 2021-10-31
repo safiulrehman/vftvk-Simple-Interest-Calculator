@@ -1,46 +1,45 @@
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <div class="container">
-
-        <h1>Simple Interest Calculator</h1>
-<div class="inner-container">
-
-        <label class="label">Amount</label>  <input class="fields" type="number"  id="principal" required>  <br/>
-        <label class="label">Interest Rate</label><input class="fields" type="range" step=".5"min="1" max="20"  id="rate" required> <span id="sliderselect"></span>% <br/>
-        <label class="label">No. of Years</label> 
-<select class="fields" name="years" id="years">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-</select>  <br/>
-        <button onclick="compute()">Compute Interest</button><br><br>
-        <span id="amnt"></span>
-        <span id="rat"></span>
-        <span id="total"></span>
-        <span id="nextyear"></span>
-</div>
-<div class="copyright"> &copy; Everyone Can Get Rich</div>
-</div>
-    </body>
+   <head>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Simple Interest Calculator</h1>
+         <div class="inner-container">
+            <label class="label">Amount</label>  <input class="fields" type="number"  id="principal" required>  <br/>
+            <label class="label">Interest Rate</label><input class="fields" type="range" step=".5"min="1" max="20"  id="rate" required> <span id="sliderselect"></span>% <br/>
+            <label class="label">No. of Years</label> 
+            <select class="fields" name="years" id="years">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+            </select>
+            <br/>
+            <button onclick="compute()">Compute Interest</button><br><br>
+            <span id="amnt"></span>
+            <span id="rat"></span>
+            <span id="total"></span>
+            <span id="nextyear"></span>
+         </div>
+         <div class="copyright"> &copy; Everyone Can Get Rich</div>
+      </div>
+   </body>
 </html>
 <script>
-var slider = document.getElementById("rate");
-var output = document.getElementById("sliderselect");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-
+   var slider = document.getElementById("rate");
+   var output = document.getElementById("sliderselect");
+   output.innerHTML = slider.value;
+   
+   slider.oninput = function() {
+     output.innerHTML = this.value;
+   }
+   
 </script>
